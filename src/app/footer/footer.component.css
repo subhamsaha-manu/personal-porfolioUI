@@ -1,0 +1,18 @@
+footer{
+    background-color: floralwhite;
+}
+
+footer .soc{
+    float: right;
+} 
+
+footer .copy{
+    float: left;
+    padding-top: 2px;
+    font-size: 11px;
+    color: #999999;
+}
+
+.soc >a{
+    margin-right: 15px;
+}

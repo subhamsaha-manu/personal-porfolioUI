@@ -1,0 +1,19 @@
+<section fxLayout="column" fxFlexAlign="stretch">
+  <div fxFlexAlign="center">
+    <p>Welcome to the Material Angular Application</p>
+  </div>
+
+  <p>This template application has been made using :</p>
+
+  <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
+    <mat-tab label="Material Components"> 
+      <p>Angular Material component</p> 
+    </mat-tab>
+    <mat-tab label="Tab 2">
+       <p>Tab 2 details</p>
+      </mat-tab>
+    <mat-tab label="Fully responsive navigation menu">
+       <p>By using material components, a fully responsive navigation menu, with its side-bar as well.</p>
+      </mat-tab>
+  </mat-tab-group>
+</section>
