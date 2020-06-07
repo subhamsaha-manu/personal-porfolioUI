@@ -5,7 +5,7 @@
     </mat-sidenav>
     <mat-sidenav-content class="main_content">
       <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
-      <main  class="content">
+      <main fxFlex fxLayout="column" class="content">
         <router-outlet></router-outlet>
       </main>
       <app-footer></app-footer>

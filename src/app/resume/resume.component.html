@@ -1,1 +1,143 @@
-<p>resume works!</p>
+<div class="mainResumeContainer" fxLayout="row" fxLayout.xs="column" fxFlexFill fxLayoutGap="20px" *ngIf="user">
+    <div fxFlex="20" fxLayout="column" fxFlex.xs="60" class="resumeLeftContainer">
+        <mat-card fxFlex="100" fxLayout="column">
+            <mat-card-header
+                fxLayout="column"
+                fxLayoutAlign="end end" 
+                fxFlex = "40"
+                fxFlex.xs="60">
+                <mat-card-title>{{user.firstName}}{{user.middleName}}{{user.lastName}}</mat-card-title>
+                <mat-card-subtitle>Full Stack developer</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content 
+                fxFlex 
+                style="background-color: #5da4d9"
+                fxLayout="column"
+                fxLayoutGap="5px">
+                <!--Start of Career Objective-->
+                <div class = "item"
+                     fxLayout="row"
+                     fxLayoutGap="15px"
+                     fxFlexOffset="3">
+
+                   <div class="icon">
+                    <span 
+                        class="iconify" 
+                        data-icon="bx:bxs-user" 
+                        data-inline="false" 
+                        data-width="30px" 
+                        data-height="30px"
+                        style="margin-left: 15px;"></span>
+                   </div>  
+                   <div class="text">
+                    <p>{{user.careerObjective}}</p>
+                    <mat-divider></mat-divider>
+                   </div>
+                </div>
+                <!--End of Career Objective-->
+                <!--Start of Mobile-->
+                <div class = "item"
+                     fxLayout="row"
+                     fxLayoutGap="15px"
+                     fxFlexOffset="3">
+
+                   <div class="icon">
+                    <span 
+                        class="iconify" 
+                        data-icon="bx:bx-phone-call" 
+                        data-inline="false" 
+                        data-width="30px" 
+                        data-height="30px"
+                        style="margin-left: 15px;"></span>
+                   </div>  
+                   <div class="text">
+                    <p>{{user.mobileNumber}}</p>
+                    <mat-divider></mat-divider>
+                   </div>
+                </div>
+                <!--End of Mobile-->
+                <!--Start of Mail-->
+                <div class = "item"
+                     fxLayout="row"
+                     fxLayoutGap="15px"
+                     fxFlexOffset="3">
+
+                   <div class="icon">
+                    <span 
+                        class="iconify" 
+                        data-icon="clarity:email-line"
+                        data-inline="false" 
+                        data-width="30px" 
+                        data-height="30px"
+                        style="margin-left: 15px;"></span>
+                   </div>  
+                   <div class="text">
+                    <p>{{user.emailAddresses[0].value}}</p>
+                    <mat-divider></mat-divider>
+                   </div>
+                </div>
+                <!--End of Mail-->
+                <!--Start of LinkedId-->
+                <div class = "item"
+                     fxLayout="row"
+                     fxLayoutGap="15px"
+                     fxFlexOffset="3">
+                   <div class="icon">
+                    <span 
+                        class="iconify" 
+                        data-icon="ant-design:linkedin-filled"
+                        data-inline="false" 
+                        data-width="30px" 
+                        data-height="30px"
+                        style="margin-left: 15px;"></span>
+                   </div>  
+                   <div class="text">
+                    <p>{{user.linkedInId}}</p>
+                    <mat-divider></mat-divider>
+                   </div>
+                </div>
+                <!--End of LinkedId-->
+                <!--Start of Skills-->
+                <div class = "item"
+                     fxLayout="row"
+                     fxLayoutGap="15px"
+                     fxFlexOffset="3">
+                   <div class="icon">
+                    <span 
+                        class="iconify" 
+                        data-icon="carbon:skill-level"
+                        data-inline="false" 
+                        data-width="30px" 
+                        data-height="30px"
+                        style="margin-left: 15px;"></span>
+                   </div>  
+                   <div class="text">
+                    <h2>Worked</h2>
+                    <mat-list>
+                        <div  *ngFor="let skill of user.skills">
+                         <mat-list-item  *ngIf="skill.workingExperience">
+                               <div mat-line>{{skill.skill}}</div>
+                               <div mat-line class="slider"><mat-slider disabled  value={{skill.skillLevel}}></mat-slider></div>
+                         </mat-list-item>
+                        </div>    
+                    </mat-list>
+                    <h2>NotWorked</h2>
+                    <mat-list>
+                        <div  *ngFor="let skill of user.skills">
+                         <mat-list-item  *ngIf="!skill.workingExperience">
+                               <div mat-line>{{skill.skill}}</div>
+                               <div mat-line class="slider"><mat-slider disabled  value={{skill.skillLevel}}></mat-slider></div>
+                         </mat-list-item>
+                        </div>    
+                    </mat-list>
+                    <mat-divider></mat-divider>
+                   </div>
+                </div>
+
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div fxFlex class="resumeRightContainer">
+
+    </div>
+</div>
