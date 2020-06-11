@@ -29,7 +29,7 @@ export class DataServiceService {
     let params = new HttpParams();
     params.append('email','subhamsaha90@gmail.com');
     console.log("Params ",params);
-    return this.httpClient.get<ResponsePayLoad>("http://localhost:8080/getName?email=subhamsaha90@gmail.com",{responseType:'json'})
+    return this.httpClient.get<ResponsePayLoad>("https://my-personal-porfolio-app.herokuapp.com/getName?email=subhamsaha90@gmail.com",{responseType:'json'})
     .pipe(
       map(responseData => {
         const user =  responseData.payload;
