@@ -1,5 +1,4 @@
 import { Component, OnInit,ViewEncapsulation } from '@angular/core';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class DashboardComponent implements OnInit {
   start: boolean = false
-  title:string = "Fullstack developer";
+  title:string = "Fullstack Developer. Occsional Photographer"
   constructor() { }
 
   ngOnInit(): void {

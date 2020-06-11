@@ -1,26 +1,34 @@
-<div class="mainResumeContainer" fxLayout="row" fxLayout.xs="column" fxFlexFill fxLayoutGap="20px" *ngIf="user">
-    <div fxFlex="20" fxLayout="column" fxFlex.xs="60" class="resumeLeftContainer">
+<div class="mainResumeContainer"
+        fxLayout="row" 
+        fxLayout.xs="column"
+        fxFlexFill
+        fxLayoutGap="20px"
+        *ngIf="user">
+    <div fxFlex="30" 
+        fxLayout="column"
+        class="resumeLeftContainer"
+        fxFlexOffset = "5">
         <mat-card fxFlex="100" fxLayout="column">
             <mat-card-header
                 fxLayout="column"
                 fxLayoutAlign="end end" 
-                fxFlex = "40"
-                fxFlex.xs="60">
+                fxFlex = "20"
+                class="profilePic">
                 <mat-card-title>{{user.firstName}}{{user.middleName}}{{user.lastName}}</mat-card-title>
                 <mat-card-subtitle>Full Stack developer</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content 
-                fxFlex 
-                style="background-color: #5da4d9"
                 fxLayout="column"
-                fxLayoutGap="5px">
+                fxLayoutGap="5px"
+                class="leftSideCardContent"
+                fxFlex>
                 <!--Start of Career Objective-->
                 <div class = "item"
                      fxLayout="row"
                      fxLayoutGap="15px"
-                     fxFlexOffset="3">
-
-                   <div class="icon">
+                     fxLayout.xs="column"
+                     fxLayoutGap.xs="5px">
+                   <div class="userIcon">
                     <span 
                         class="iconify" 
                         data-icon="bx:bxs-user" 
@@ -29,9 +37,9 @@
                         data-height="30px"
                         style="margin-left: 15px;"></span>
                    </div>  
-                   <div class="text">
+                   <div class="text careerObjective">
                     <p>{{user.careerObjective}}</p>
-                    <mat-divider></mat-divider>
+                    <mat-divider class="leftSideDivider"></mat-divider>
                    </div>
                 </div>
                 <!--End of Career Objective-->
@@ -52,7 +60,7 @@
                    </div>  
                    <div class="text">
                     <p>{{user.mobileNumber}}</p>
-                    <mat-divider></mat-divider>
+                    <mat-divider class="leftSideDivider"></mat-divider>
                    </div>
                 </div>
                 <!--End of Mobile-->
@@ -73,7 +81,7 @@
                    </div>  
                    <div class="text">
                     <p>{{user.emailAddresses[0].value}}</p>
-                    <mat-divider></mat-divider>
+                    <mat-divider class="leftSideDivider"></mat-divider>
                    </div>
                 </div>
                 <!--End of Mail-->
@@ -93,7 +101,7 @@
                    </div>  
                    <div class="text">
                     <p>{{user.linkedInId}}</p>
-                    <mat-divider></mat-divider>
+                    <mat-divider class="leftSideDivider"></mat-divider>
                    </div>
                 </div>
                 <!--End of LinkedId-->
@@ -116,7 +124,7 @@
                     <mat-list>
                         <div  *ngFor="let skill of user.skills">
                          <mat-list-item  *ngIf="skill.workingExperience">
-                               <div mat-line>{{skill.skill}}</div>
+                               <div mat-line class="matLineLeftSide">{{skill.skill}}</div>
                                <div mat-line class="slider"><mat-slider disabled  value={{skill.skillLevel}}></mat-slider></div>
                          </mat-list-item>
                         </div>    
@@ -125,19 +133,122 @@
                     <mat-list>
                         <div  *ngFor="let skill of user.skills">
                          <mat-list-item  *ngIf="!skill.workingExperience">
-                               <div mat-line>{{skill.skill}}</div>
+                               <div mat-line class="matLineLeftSide">{{skill.skill}}</div>
                                <div mat-line class="slider"><mat-slider disabled  value={{skill.skillLevel}}></mat-slider></div>
                          </mat-list-item>
                         </div>    
                     </mat-list>
-                    <mat-divider></mat-divider>
                    </div>
                 </div>
-
             </mat-card-content>
         </mat-card>
     </div>
-    <div fxFlex class="resumeRightContainer">
-
+    <div fxFlex = "60" class="resumeRightContainer"
+        fxLayout="column"
+        fxLayoutAlign="none"
+        fxLayoutGap="20px">
+        <mat-card>
+            <mat-card-content
+            fxLayout="row"
+            fxLayoutGap="30px"
+            fxFlexOffset="20px"
+            fxLayout.xs="column"
+            fxLayoutGap.xs="5px"
+            class="rightSideCardContent">
+            <div class="iconRightSide">
+                <span 
+                    class="iconify" 
+                    data-icon="ic:outline-work" 
+                    data-inline="false" 
+                    data-width="40px" 
+                    data-height="40px"
+                    style="margin-left: 15px;"></span>
+               </div>  
+               <div class="textRightSide">
+                <h1>Experience</h1>
+                <div  *ngFor="let workExperience of user.workExperience  ; let lastItem = last;">
+                    <mat-list-item>
+                          <div mat-line class="matLineRightSide">
+                              <h3>{{workExperience.designation}}@{{workExperience.officeName}}</h3>
+                            </div>
+                          <span mat-line class="matLineRightSide date">{{workExperience.joiningDate}}-{{workExperience.endingDate}}</span>
+                          <div *ngFor="let experience of workExperience.workExperience">
+                            <div mat-line class="matLineRightSide">{{experience}}</div>
+                          </div>
+                    </mat-list-item>
+                    <mat-divider *ngIf="!lastItem" class="rightSideDivider"></mat-divider>
+                </div>  
+               </div>
+            </mat-card-content>
+        </mat-card>
+        <!--End of Work Experience section-->
+        <!--Start of Education Section-->
+        <mat-card>
+        <mat-card-content
+        fxLayout="row"
+        fxLayoutGap="30px"
+        class="rightSideCardContent"
+        fxFlexOffset="20px"
+        fxLayout.xs="column"
+        fxLayoutGap.xs="10px">
+        <div class="iconRightSide">
+            <span 
+                class="iconify" 
+                data-icon="zondicons:education"
+                data-inline="false" 
+                data-width="40px" 
+                data-height="40px"
+                style="margin-left: 15px;"></span>
+           </div>  
+           <div class="textRightSide">
+            <h1>Education</h1>
+            <div  *ngFor="let educationQualification of user.educationQualification ; let lastItem = last;">
+                <mat-list-item>
+                      <div mat-line class="matLineRightSide">
+                          <h3>{{educationQualification.degree}}@{{educationQualification.instituitionName}}</h3>
+                        </div>
+                        <span mat-line class="matLineRightSide date">
+                            {{educationQualification.startingDate}}-{{educationQualification.endingDate}}
+                        </span>
+                      <div *ngFor="let academicAchievements of educationQualification.academicAchievements">
+                        <div mat-line class="matLineRightSide">{{academicAchievements}}</div>
+                      </div>
+                </mat-list-item>
+                <mat-divider *ngIf="!lastItem" class="rightSideDivider"></mat-divider>
+            </div>  
+           </div>
+        </mat-card-content>
+        </mat-card>
+        <!--End of Education Section-->
+        <!--Start of Interest Section-->
+        <mat-card>
+            <mat-card-content
+            fxLayout="row"
+            fxLayoutGap="30px"
+            class="rightSideCardContent"
+            fxFlexOffset="20px"
+            fxLayout.xs="column"
+            fxLayoutGap.xs="10px">
+        <div class="iconRightSide">
+            <span 
+                class="iconify" 
+                data-icon="eva:activity-fill"
+                data-inline="false" 
+                data-width="40px" 
+                data-height="40px"
+                style="margin-left: 15px;"></span>
+           </div>  
+           <div class="textRightSide">
+            <h1>Interest</h1>
+            <div  *ngFor="let interest of user.areasOfInterest; let lastItem = last;">
+                <mat-list-item>
+                      <div mat-line class="matLineRightSide">{{interest.value}}</div>
+                </mat-list-item>
+                <mat-divider  *ngIf="!lastItem" class="rightSideDivider"></mat-divider>
+            </div>  
+           </div>
+        </mat-card-content>
+        </mat-card>
+        <!--End of Interest Section-->
     </div>
 </div>

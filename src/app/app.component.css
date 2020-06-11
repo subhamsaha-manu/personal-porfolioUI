@@ -13,7 +13,7 @@ mat-sidenav {
     min-height: 100vh;
 }
 .content {
-    background-color: grey;
+    /*background-color: grey;*/
 }
 /* * Make the component injected by <router-outlet> full height: */
 main {

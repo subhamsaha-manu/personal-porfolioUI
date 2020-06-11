@@ -1,9 +1,30 @@
 
 .dashboardContainer {
-    background: blue;
+    /*background: blue;*/
     /* height: 200px; */
   }
 
-  .router-flex{
-    flex: 1 1 100%;
+.userName{
+  font-size: 60px !important;
+  
+}
+  .typingAnimationSpan{
+    font-size: 25px;
+    letter-spacing: 0.442em;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .userName{
+      font-size: 30px !important;
+      
+    }
+      .typingAnimationSpan{
+        font-size: 15px;
+        letter-spacing: 0.096em;
+        /*margin-left: 5%;*/
+      } 
+      .dashboardContainer {
+       margin-top: 50%;
+      }
   }
