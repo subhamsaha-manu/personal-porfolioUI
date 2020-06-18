@@ -1,0 +1,639 @@
+{
+   "_id":{
+      "$oid":"5ec28a594428ef366c45e393"
+   },
+   "email":[
+      {
+         "_id":{
+            "$oid":"5ec92e0317e35204c83d8bb3"
+         },
+         "value":"subhamsaha90@gmail.com"
+      },
+      {
+         "_id":{
+            "$oid":"5ec92e0317e35204c83d8bb3"
+         },
+         "value":"subhamsaha90@yahoo.in"
+      }
+   ],
+   "name":"Subham Saha",
+   "linkedInId":"https://www.linkedin.com/in/subham-saha/",
+   "mobileNumber":{
+      "$numberLong":"9051089153"
+   },
+   "careerObjective":"IT Professional with over 3 years of experience in full stack product development mainly using Java stack. Also have in-depth experience in working with Angular and Spring Projects namely Boot, Data and Security. My greatest strength is business awareness and flexible in working with various technologies.",
+   "experience":[
+      {
+         "_id":{
+            "$oid":"5ec9311a17e35204c83d8bb5"
+         },
+         "officeName":"Nomura Research Institute Financial Technologies Pvt. Ltd.",
+         "designation":"Associate Software Engineer Grade 1 Level 1",
+         "joiningDate":{
+            "$date":{
+               "$numberLong":"1502562600000"
+            }
+         },
+         "workExperience":[
+            "Working as a developer building both backend API’s and frontend design for back office brokers.",
+            "Have an in-depth understanding of the business and client needs thus delivering product using complete Java stack."
+         ]
+      },
+      {
+         "_id":{
+            "$oid":"5edf32bada8d1122ec6341c9"
+         },
+         "officeName":"Nomura Research Institute Financial Technologies Pvt. Ltd.",
+         "designation":"Intern",
+         "joiningDate":{
+            "$date":{
+               "$numberLong":"1483295400000"
+            }
+         },
+         "endingDate":{
+            "$date":{
+               "$numberLong":"1488220200000"
+            }
+         },
+         "workExperience":[
+            "Test Case Generator System an application based on Spring MVC architecture and modern front-end tools was strategized and developed for generating all possible test cases for a given screen of another application.",
+            "Would help in reducing the job of a tester where he/she would not have to guess the possible number of test cases and validate accordingly for a given application."
+         ]
+      },
+      {
+         "_id":{
+            "$oid":"5edf333cda8d1122ec6341ca"
+         },
+         "officeName":"System on Silicon Corp, US based start-up",
+         "designation":"Research Intern",
+         "joiningDate":{
+            "$date":{
+               "$numberLong":"1475346600000"
+            }
+         },
+         "endingDate":{
+            "$date":{
+               "$numberLong":"1483295400000"
+            }
+         },
+         "workExperience":[
+            "Worked under the supervision of the R&D lead to design the back-end architecture of a cloud/data analytics based mobile app for food and nutrition.",
+            "Actively participated in the design of the entity-relationship diagram and associated database schemas for the aforementioned mobile app."
+         ]
+      },
+      {
+         "_id":{
+            "$oid":"5edf33ebda8d1122ec6341cb"
+         },
+         "officeName":"Engineering & Industrial Services – Tata Consultancy Services",
+         "designation":"Summer Intern",
+         "joiningDate":{
+            "$date":{
+               "$numberLong":"1464805800000"
+            }
+         },
+         "endingDate":{
+            "$date":{
+               "$numberLong":"1475260200000"
+            }
+         },
+         "workExperience":[
+            "An algorithm was developed for an optimized and efficient handling of huge amount of employee data.",
+            "Implemented various levels of view restrictions for different categories of employees."
+         ]
+      }
+   ],
+   "educationQualification":[
+      {
+         "_id":{
+            "$oid":"5ec934b917e35204c83d8bb6"
+         },
+         "instituitionName":"MCKV Insttitute OF Engineering",
+         "degree":"BTech in Computer Science",
+         "startingDate":{
+            "$date":{
+               "$numberLong":"1376332200000"
+            }
+         },
+         "endingDate":{
+            "$date":{
+               "$numberLong":"1498761000000"
+            }
+         },
+         "academicAchievements":[
+            "2nd Runners-up in TCS-EngiNX for the project ‘Accident Prevention System on L-Shaped roads and Accidental Sleep Detection in the year of 2015.’",
+            "Ranked 57 in an international coding contest conducted by Tata Consultancy Services, Codevita’15, among~49,000 teams."
+         ]
+      }
+   ],
+   "interests":[
+      {
+         "_id":{
+            "$oid":"5ec9367517e35204c83d8bb8"
+         },
+         "value":"Leading and active member of an NPO (You N Society) which caters to the unprivileged teenagers of the society."
+      },
+      {
+         "_id":{
+            "$oid":"5ec9367517e35204c83d8bb9"
+         },
+         "value":"Completed course in Photography and also an avid photographer."
+      },
+      {
+         "_id":{
+            "$oid":"5ec936d217e35204c83d8bba"
+         },
+         "value":"Reading books and novels."
+      },
+      {
+         "_id":{
+            "$oid":"5ecbc7501671f03750a328c2"
+         },
+         "value":"Completed Level 1 Course of Spanish, in Udemy."
+      }
+   ],
+   "skills":[
+      {
+         "_id":{
+            "$oid":"5ecbc78f1671f03750a328c3"
+         },
+         "skill":"Angular 8",
+         "workingExperience":true,
+         "skillLevel":{
+            "$numberInt":"80"
+         }
+      },
+      {
+         "_id":{
+            "$oid":"5ecbc7ce1671f03750a328c4"
+         },
+         "skill":"Spring Boot",
+         "workingExperience":true,
+         "skillLevel":{
+            "$numberInt":"70"
+         }
+      },
+      {
+         "_id":{
+            "$oid":"5ecbc7f81671f03750a328c5"
+         },
+         "skill":"Docker",
+         "workingExperience":false,
+         "skillLevel":{
+            "$numberInt":"40"
+         }
+      },
+      {
+         "_id":{
+            "$oid":"5edff874da8d1122ec6341cc"
+         },
+         "skill":"Spring Framework",
+         "workingExperience":true,
+         "skillLevel":{
+            "$numberInt":"75"
+         }
+      },
+      {
+         "_id":{
+            "$oid":"5edff8d7da8d1122ec6341cd"
+         },
+         "skill":"Spring MVC",
+         "workingExperience":true,
+         "skillLevel":{
+            "$numberInt":"75"
+         }
+      },
+      {
+         "_id":{
+            "$oid":"5edff90cda8d1122ec6341ce"
+         },
+         "skill":"Spring Boot",
+         "workingExperience":true,
+         "skillLevel":{
+            "$numberInt":"60"
+         }
+      },
+      {
+         "_id":{
+            "$oid":"5edff96bda8d1122ec6341cf"
+         },
+         "skill":"Spring Data",
+         "workingExperience":true,
+         "skillLevel":{
+            "$numberInt":"60"
+         }
+      },
+      {
+         "_id":{
+            "$oid":"5edff9b2da8d1122ec6341d0"
+         },
+         "skill":"Spring Security",
+         "workingExperience":false,
+         "skillLevel":{
+            "$numberInt":"50"
+         }
+      },
+      {
+         "_id":{
+            "$oid":"5edff9bada8d1122ec6341d1"
+         },
+         "skill":"Maven 3",
+         "workingExperience":true,
+         "skillLevel":{
+            "$numberInt":"75"
+         }
+      },
+      {
+         "_id":{
+            "$oid":"5edff9c0da8d1122ec6341d2"
+         },
+         "skill":"RDBMS",
+         "workingExperience":true,
+         "skillLevel":{
+            "$numberInt":"70"
+         }
+      },
+      {
+         "_id":{
+            "$oid":"5edff9c6da8d1122ec6341d3"
+         },
+         "skill":"Git",
+         "workingExperience":true,
+         "skillLevel":{
+            "$numberInt":"60"
+         }
+      },
+      {
+         "_id":{
+            "$oid":"5edffa5eda8d1122ec6341d4"
+         },
+         "skill":"NoSQL MongoDB",
+         "workingExperience":false,
+         "skillLevel":{
+            "$numberInt":"40"
+         }
+      }
+   ],
+   "photos":[
+      {
+         "id":{
+            "$numberInt":"1"
+         },
+         "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/AirPhoto-1-min.jpg",
+         "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/AirPhoto-1-min.jpg",
+         "title":"AirPhoto-1.jpg",
+         "description":"Photo taken from Aeroplane",
+         "likeCounter":{
+            "$numberInt":"0"
+         }
+      },
+      {
+         "id":{
+            "$numberInt":"2"
+         },
+         "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/AirPhoto-2-min.jpg",
+         "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/AirPhoto-2-min.jpg",
+         "title":"AirPhoto-2.jpg",
+         "description":"Photo taken from aeroplane",
+         "likeCounter":{
+            "$numberInt":"0"
+         }
+      },
+      {
+        "id":{
+           "$numberInt":"3"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/AirPhoto-3-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/AirPhoto-3-min.jpg",
+        "title":"AirPhoto-3.jpg",
+        "description":"Photo taken from plane",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"4"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/AirPhoto-4-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/AirPhoto-4-min.jpg",
+        "title":"AirPhoto-4.jpg",
+        "description":"Photo taken from plane",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"5"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Butterfly-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Butterfly-min.jpg",
+        "title":"Butterfly.jpg",
+        "description":"Butterfly",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"6"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Butterfly_BLore-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Butterfly_BLore-min.jpg",
+        "title":"Butterfly-2.jpg",
+        "description":"Butterfly photo taken in Bangalore",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"7"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0291-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0291-min.jpg",
+        "title":"Snack.jpg",
+        "description":"Bengali Snack",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"8"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0375-2-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0375-2-min.jpg",
+        "title":"Full Blood Moon.jpg",
+        "description":"Full Blood Moon",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"9"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0442-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0442-min.jpg",
+        "title":"Victoria Memorial.jpg",
+        "description":"Vicotria Memorial clicked at Night",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"10"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0476-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0476-min.jpg",
+        "title":"The42.jpg",
+        "description":"The 42 clicked on First Pink Test in India",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"11"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0481-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0481-min.jpg",
+        "title":"Marriage.jpg",
+        "description":"Marriage of my school friend Dr. Monojit Mukherjee and his college classmate Dr. Roshmi Mukherjee",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"12"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0503-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0503-min.jpg",
+        "title":"Eden Gardens.jpg",
+        "description":"Black and white photo of Eden Gardens",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"13"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0622-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0622-min.jpg",
+        "title":"Parrot.jpg",
+        "description":"Red beaked parakreet",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"14"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0697-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0697-min.jpg",
+        "title":"Model-1.jpg",
+        "description":"Model photoshoot during Holi",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"15"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0726-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0726-min.jpg",
+        "title":"Model-2.jpg",
+        "description":"Model photoshoot during Holi",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"16"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0730-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_0730-min.jpg",
+        "title":"Landscape-1.jpg",
+        "description":"A landscaope view taken in Mysore",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"17"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_1165-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/DSC_1165-min.jpg",
+        "title":"Model-3.jpg",
+        "description":"Model photoshoot",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"18"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Dragonfly-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Dragonfly-min.jpg",
+        "title":"Dragonfly-1.jpg",
+        "description":"A Dragonfly macro",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"19"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Lockdown-1-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Lockdown-1-min.jpg",
+        "title":"Lockdown-1.jpg",
+        "description":"A creative photo based on Lockdown theme",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"20"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Owl-1-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Owl-1-min.jpg",
+        "title":"Owl-1.jpg",
+        "description":"A pair of Spotted Owl",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"21"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Pigeon-1-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Pigeon-1-min.jpg",
+        "title":"Pigeon-1.jpg",
+        "description":"A white Pigeon",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"22"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Pigeon-4-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Pigeon-4-min.jpg",
+        "title":"Pigeon-4.jpg",
+        "description":"A white Pigeon",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"23"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Pigeon-5-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Pigeon-5-min.jpg",
+        "title":"Pigeon-5.jpg",
+        "description":"A white Pigeon",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"24"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Rainbow-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Rainbow-min.jpg",
+        "title":"Rainbow.jpg",
+        "description":"A Rainbow across the road, in Katra",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"25"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Red+Vented+Bulbul-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Red+Vented+Bulbul-min.jpg",
+        "title":"Red_Vented_Bulbul.jpg",
+        "description":"A Red Vented Bulbul",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"26"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Roads-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Roads-min.jpg",
+        "title":"Roads.jpg",
+        "description":"A highway in Bangalore",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"27"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Squirel-5-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Squirel-5-min.jpg",
+        "title":"Squirel-5.jpg",
+        "description":"A Squirel",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"28"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Squirel-7-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Squirel-7-min.jpg",
+        "title":"Squirel-7.jpg",
+        "description":"A Squirel",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"29"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Vaishnodevi-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Vaishnodevi-min.jpg",
+        "title":"Vaishnodevi Mandir.jpg",
+        "description":"The Vaishnodevi Mandir",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     },
+     {
+        "id":{
+           "$numberInt":"30"
+        },
+        "urlForSmallerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Work+Must+Go+On-min.jpg",
+        "urlForLargerDimension":"https://portfolioapp-subham.s3.ap-south-1.amazonaws.com/Work+Must+Go+On-min.jpg",
+        "title":"Lockdown-2.jpg",
+        "description":"A creative photo based on Lockdown theme",
+        "likeCounter":{
+           "$numberInt":"0"
+        }
+     }
+   ]
+}

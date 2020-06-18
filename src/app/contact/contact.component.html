@@ -1,1 +1,65 @@
-<p>contact works!</p>
+<div class="contactContainer" fxFlexFill fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="5px">
+  <div class="info-block" fxLayout="row" fxLayoutGap="3px">
+    <span class="iconify" data-icon="mdi:alert-circle-outline" data-inline="false" data-width="44px" data-height="44px"></span>
+    <div fxLayout="column">
+      <p>Want a similar website of your own,in just a few bucks ? </p>
+      <p>Fill the below form, and I will get back to you.</p>
+    </div>
+    
+  </div>
+  <div class="contactMeForm">
+        <form [formGroup]="contactMeForm" (ngSubmit)= "onSubmit()">
+            <mat-form-field  class="form-fields name-fields" style="margin-top: 20px;" appearance="outline"> 
+                <mat-label>First Name </mat-label>
+                <input 
+                  type="text"
+                  matInput placeholder="First Name"
+                  name="firstName"
+                  formControlName="firstName"/>
+              </mat-form-field>
+              <mat-form-field class="form-fields name-fields" appearance="outline">
+                <mat-label>Last Name </mat-label>
+                <input 
+                  type="text"
+                  matInput placeholder="Last Name"
+                  name="lastName"
+                  formControlName="lastName"/>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="form-fields"  appearance="outline">
+                <mat-label>Mobile Number</mat-label>
+                <span matPrefix>+91 &nbsp;</span>
+                <input type="tel" matInput
+                  name="mobileNumber"
+                  formControlName="mobileNumber"/>
+                <mat-icon matSuffix><span class="material-icons">
+                  ring_volume
+                  </span></mat-icon>
+              </mat-form-field>
+              <mat-form-field class="form-fields name-fields" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input type="email"
+                matInput 
+                name="email"
+                formControlName="email" 
+                [errorStateMatcher]="matcher"/>
+                <mat-icon matSuffix><span class="material-icons">
+                  alternate_email
+                  </span></mat-icon>  
+                  <mat-error *ngIf="contactMeForm.hasError('email') && !contactMeForm.hasError('required')">
+                    Please enter a valid email address
+                  </mat-error>      
+              </mat-form-field>
+              <br>
+              <div fxLayout="row" fxLayoutAlign="space-around none" >
+                <button mat-raised-button color="primary" fxFlex="30" (click)="signInWithFB(); $event.preventDefault()" [disabled]="loggedIn">
+                  <span class="iconify" data-icon="mdi:facebook" data-inline="false" data-width="44px" data-height="44px"></span> Sign-In</button>
+                <button mat-raised-button color="warn" fxFlex="30" (click)="signInWithGoogle(); $event.preventDefault()" [disabled]="loggedIn">
+                  <span class="iconify" data-icon="mdi:google" data-inline="false" data-width="44px" data-height="44px"></span> Sign-In</button>
+                <button mat-raised-button fxFlex="30" [disabled]="!contactMeForm.valid">
+                  <span class="iconify" data-icon="mdi:transfer-right" data-inline="false" data-width="44px" data-height="44px"></span></button>
+              </div>
+              
+        </form>
+    </div>
+</div>

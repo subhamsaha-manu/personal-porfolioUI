@@ -3,6 +3,7 @@ import { Experience } from './Experience';
 import { Education } from './Education';
 import { Interest } from './Interest';
 import { Skill } from './Skill';
+import { Image } from './Image';
 
 
 
@@ -20,7 +21,8 @@ export class User{
         public workExperience : Experience[],
         public educationQualification : Education[],
         public areasOfInterest : Interest[],
-        public skills : Skill[]
+        public skills : Skill[],
+        public photos : Image[]
     ){}
 
 

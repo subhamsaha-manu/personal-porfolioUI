@@ -1,0 +1,19 @@
+.image-card{
+    margin-top: 20px;
+}
+
+.image{
+    max-width: 400px !important;
+    max-height: 300px !important;
+    min-width: 400px !important;
+    min-height: 300px !important;
+    margin-left: 20px !important;
+}
+
+@media screen and (max-width: 600px) {
+    .image-card{
+        /*max-width: 400px;
+        margin-top: 20px;
+        margin-left: 20px;*/
+    }
+}

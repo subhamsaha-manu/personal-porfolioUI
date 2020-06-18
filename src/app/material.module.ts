@@ -10,6 +10,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider'; 
 import {MatProgressBarModule} from '@angular/material/progress-bar'; 
 import {MatSliderModule} from '@angular/material/slider'; 
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import {MatSnackBarModule} from '@angular/material/snack-bar'; 
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
     imports : [
@@ -23,7 +28,12 @@ import {MatSliderModule} from '@angular/material/slider';
         MatCardModule,
         MatDividerModule,
         MatProgressBarModule,
-        MatSliderModule
+        MatSliderModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSnackBarModule,
+        MatDialogModule,
+        MatProgressSpinnerModule
     ],
     exports:[
         MatTabsModule,
@@ -35,7 +45,12 @@ import {MatSliderModule} from '@angular/material/slider';
         MatCardModule,
         MatDividerModule,
         MatProgressBarModule,
-        MatSliderModule
+        MatSliderModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSnackBarModule,
+        MatDialogModule,
+        MatProgressSpinnerModule
     ]
 })
 
