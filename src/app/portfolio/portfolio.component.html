@@ -1,1 +1,14 @@
-<p>portfolio works!</p>
+<div 
+    class = "mainPortfolioContainer"
+    fxLayout="row wrap" fxLayout.xs="column wrap">
+    <div fxFlexFill fxLayoutAlign="center center" *ngIf="!photos">
+        <mat-spinner></mat-spinner>
+    </div>
+    <div fxFlex.gt-xs="50%" 
+        [fxFlex.gt-xs]="regularDistribution" 
+        *ngFor="let photo of photos"
+        (click)="openDialog(photo.urlForSmallerDimension,photo.description)"
+        class="image-card" >
+        <img mat-card-image class ="image" src={{photo.urlForSmallerDimension}} alt={{photo.title}}>
+    </div>
+</div>

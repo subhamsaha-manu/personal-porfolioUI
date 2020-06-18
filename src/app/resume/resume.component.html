@@ -1,3 +1,6 @@
+<div fxFlexFill fxLayoutAlign="center center" *ngIf="!user">
+    <mat-spinner></mat-spinner>
+</div>
 <div class="mainResumeContainer"
         fxLayout="row" 
         fxLayout.xs="column"
@@ -14,8 +17,8 @@
                 fxLayoutAlign="end end" 
                 fxFlex = "20"
                 class="profilePic">
-                <mat-card-title>{{user.firstName}}{{user.middleName}}{{user.lastName}}</mat-card-title>
-                <mat-card-subtitle>Full Stack developer</mat-card-subtitle>
+                <mat-card-title class="userNameResume">{{user.firstName}}{{user.middleName}}{{user.lastName}}</mat-card-title>
+                <mat-card-subtitle class="subtitle">Full Stack developer</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content 
                 fxLayout="column"
