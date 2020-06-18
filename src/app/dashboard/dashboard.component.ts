@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit {
   start: boolean = false
   name : string;
   user :User;
-  title:string = "Fullstack Developer. Occsional Photographer"
+  title:string = "Fullstack Developer. Occasional Photographer"
   constructor(private dataService : DataServiceService) { }
 
   ngOnInit(): void {

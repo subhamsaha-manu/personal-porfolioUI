@@ -11,9 +11,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .image-card{
-        /*max-width: 400px;
-        margin-top: 20px;
-        margin-left: 20px;*/
+    .image{
+        margin-right: 20px !important;
     }
 }
