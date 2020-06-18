@@ -59,8 +59,8 @@ import { SocialLoginModule, SocialAuthServiceConfig , FacebookLoginProvider,Goog
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              '624796833023-clhjgupm0pu6vgga7k5i5bsfp6qp6egh.apps.googleusercontent.com'
-            ),
+              '768253848225-ln28ehriups5ojc9vkbm3ik24vbir0v8.apps.googleusercontent.com'
+            ),//624796833023-clhjgupm0pu6vgga7k5i5bsfp6qp6egh.apps.googleusercontent.com
           },
           {
             id: FacebookLoginProvider.PROVIDER_ID,
