@@ -5,7 +5,8 @@ import { User } from './models/User';
 import { map } from 'rxjs/operators';
 import { ContactMeForm } from './models/ContactMeForm';
 
-const API_URL = 'http://localhost:8080/user/';
+const API_URL_LOCAL = 'http://localhost:8080/user/';
+const API_URL_GLOBAL = 'https://my-personal-porfolio-app.herokuapp.com/user/';
 
 export interface ResponsePayLoad{
   payload : User;
@@ -32,7 +33,7 @@ export class DataServiceService {
     let params = new HttpParams();
     params.append('email','subhamsaha90@gmail.com');
     console.log("Params ",params);
-    return this.httpClient.get<ResponsePayLoad>(API_URL+"getUser?email=subhamsaha90@gmail.com",{responseType:'json'})
+    return this.httpClient.get<ResponsePayLoad>(API_URL_GLOBAL+"getUser?email=subhamsaha90@gmail.com",{responseType:'json'})
     .pipe(
       map(responseData => {
         const user =  responseData.payload;
@@ -47,7 +48,7 @@ export class DataServiceService {
    sendMail(contactMeForm : ContactMeForm){
      
     //console.log("Auth Service ",user.value);
-     return this.httpClient.post<ResponsePayLoad>(API_URL + 'sendEmail' , 
+     return this.httpClient.post<ResponsePayLoad>(API_URL_GLOBAL + 'sendEmail' , 
      {
       firstName : contactMeForm.firstName,
       lastName : contactMeForm.lastName,
