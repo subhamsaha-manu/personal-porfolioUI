@@ -5,7 +5,9 @@
   }
 
 .userName{
-  font-size: 60px !important;
+  font-family: 'Crimson Text', serif !important;
+  font-style: italic !important;
+  font-size: 70px !important;
   color: black;
   
 }
@@ -17,7 +19,7 @@
 
   @media screen and (max-width: 600px) {
     .userName{
-      font-size: 30px !important;
+      font-size: 40px !important;
       
     }
       .typingAnimationSpan{

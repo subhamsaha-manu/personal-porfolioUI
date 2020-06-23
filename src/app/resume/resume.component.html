@@ -4,10 +4,9 @@
 <div class="mainResumeContainer"
         fxLayout="row" 
         fxLayout.xs="column"
-        fxFlexFill
         fxLayoutGap="20px"
         *ngIf="user">
-    <div fxFlex="30" 
+    <div @containerAppearanceTrigger fxFlex="30" 
         fxLayout="column"
         class="resumeLeftContainer"
         fxFlexOffset = "5">
@@ -146,7 +145,8 @@
             </mat-card-content>
         </mat-card>
     </div>
-    <div fxFlex = "60" class="resumeRightContainer"
+    <div @containerAppearanceTrigger
+         fxFlex = "60" class="resumeRightContainer"
         fxLayout="column"
         fxLayoutAlign="none"
         fxLayoutGap="20px">
@@ -169,7 +169,7 @@
                </div>  
                <div class="textRightSide">
                 <h1>Experience</h1>
-                <div  *ngFor="let workExperience of user.workExperience  ; let lastItem = last;">
+                <div *ngFor="let workExperience of user.workExperience  ; let lastItem = last;">
                     <mat-list-item>
                           <div mat-line class="matLineRightSide">
                               <h3>{{workExperience.designation}}@{{workExperience.officeName}}</h3>
@@ -186,7 +186,7 @@
         </mat-card>
         <!--End of Work Experience section-->
         <!--Start of Education Section-->
-        <mat-card>
+        <mat-card class="hiddenCard">
         <mat-card-content
         fxLayout="row"
         fxLayoutGap="30px"
@@ -205,7 +205,7 @@
            </div>  
            <div class="textRightSide">
             <h1>Education</h1>
-            <div  *ngFor="let educationQualification of user.educationQualification ; let lastItem = last;">
+            <div *ngFor="let educationQualification of user.educationQualification ; let lastItem = last;">
                 <mat-list-item>
                       <div mat-line class="matLineRightSide">
                           <h3>{{educationQualification.degree}}@{{educationQualification.instituitionName}}</h3>
@@ -224,7 +224,7 @@
         </mat-card>
         <!--End of Education Section-->
         <!--Start of Interest Section-->
-        <mat-card>
+        <mat-card class="hiddenCard">
             <mat-card-content
             fxLayout="row"
             fxLayoutGap="30px"

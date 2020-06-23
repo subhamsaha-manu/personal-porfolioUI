@@ -1,6 +1,7 @@
 import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 import { User } from '../models/User';
 import { DataServiceService } from '../data-service.service';
+import { trigger, transition, animate, style } from '@angular/animations';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +10,17 @@ import { DataServiceService } from '../data-service.service';
   host: {
     'class': 'router-flex'
   },
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  animations: [
+    trigger('containerAppearanceTrigger', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('2s', style({ opacity: 1 }))
+      ])
+    ]
+
+    )
+  ]
 })
 export class DashboardComponent implements OnInit {
   start: boolean = false
