@@ -6,6 +6,6 @@
      <div *ngIf="!user">
       <mat-spinner></mat-spinner>
     </div>
-  <div *ngIf="user"><h1 class="userName">Hello I'm {{name}}</h1></div>
+  <div @containerAppearanceTrigger *ngIf="user"><h1 class="userName">Hello I'm {{name}}</h1></div>
   <div *ngIf="user"><span class="typingAnimationSpan" typingAnimation [typeSpeed]="50" [condition]="start" [startDelay]="1000">{{title}}</span></div>
 </div>
