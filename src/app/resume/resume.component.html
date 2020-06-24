@@ -13,12 +13,10 @@
         <mat-card fxFlex="100" fxLayout="column">
             <mat-card-header
                 fxLayout="column"
-                fxLayoutAlign="end end" 
-                fxFlex = "20"
-                class="profilePic">
-                <mat-card-title class="userNameResume">{{user.firstName}}{{user.middleName}}{{user.lastName}}</mat-card-title>
-                <mat-card-subtitle class="subtitle">Full Stack developer</mat-card-subtitle>
+                fxLayoutAlign="end end"
+                >
             </mat-card-header>
+            <img class="profilePic" mat-card-image src={{user.profilePhotoUrl}} alt="Profile Photo">
             <mat-card-content 
                 fxLayout="column"
                 fxLayoutGap="5px"

@@ -1,15 +1,22 @@
 .image-card{
     margin-top: 20px;
+    max-width: 450px !important;
+    min-width: 450px !important;
+    margin-left: 15px;
 }
 
 .image{
-    max-width: 500px !important;
-    min-width: 500px !important;
-    margin-left: 20px !important;
+    max-width: 450px !important;
+    /*min-width: 500px !important;*/
 }
 
 @media screen and (max-width: 600px) {
     .image{
         margin-right: 20px !important;
+        max-width: 390px !important;
+    }
+
+    .image-card{
+        max-width: 390px !important;
     }
 }
