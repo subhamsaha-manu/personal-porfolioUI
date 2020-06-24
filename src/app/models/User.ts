@@ -15,6 +15,7 @@ export class User{
         public middleName : string,
         public lastName : string,
         public emailAddresses : Email[],
+        public profilePhotoUrl:string,
         public linkedInId : string,
         public mobileNumber : number,
         public careerObjective : string,
